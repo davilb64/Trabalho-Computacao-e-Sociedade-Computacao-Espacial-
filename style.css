@@ -188,3 +188,19 @@ html {
     659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
     696px 1654px #fff, 1144px 60px #fff;
 }
+
+#rocket{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#rocket img{
+    width: 10%;
+    cursor:pointer;
+}
+
+#rocket img:hover{
+    width: 15%;
+    transition: 0.6s;
+}
