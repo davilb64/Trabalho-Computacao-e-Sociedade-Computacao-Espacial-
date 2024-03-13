@@ -1,8 +1,12 @@
 var rocket = document.getElementById('rocket');
 var br = document.getElementById('espaco');
+let el = document.getElementById('id');
+let btn = document.getElementById('btn');
+        
 
 function voar(){
-        br.parentElement.removeChild(br);
+        el.style.color = 'blue';
+        rocket.style.animation = 'topo 10s infinite alternate';
 };
 
-rocket.addEventListener('click', voar);
+btn.addEventListener('click', voar);

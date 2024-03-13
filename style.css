@@ -198,9 +198,51 @@ html {
 #rocket img{
     width: 10%;
     cursor:pointer;
+    position: absolute;
+    bottom: -200;
+    transition: 1s;
 }
 
-#rocket img:hover{
-    width: 15%;
-    transition: 0.6s;
+@keyframes go-back {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateY(0);
+    }
 }
+
+@keyframes topo {
+    from {
+        transform: translateY(1500px);
+      }
+      to {
+        transform: translateY(0);
+      }
+}
+
+#btn{
+    cursor: pointer;
+    border: #090a0f;
+    padding: 5px;
+    border-radius: 9px;
+    background-color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+#divbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn:focus{
+    cursor: progress;
+}
+
+#id{
+    color: red;
+    animation: ease-in;
+}
+
