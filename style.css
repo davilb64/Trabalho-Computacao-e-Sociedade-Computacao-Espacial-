@@ -1,6 +1,13 @@
+*{
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
 html {
-    height: 100%;
-    overflow: hidden;
     background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 
 }
@@ -189,60 +196,112 @@ html {
     696px 1654px #fff, 1144px 60px #fff;
 }
 
-#rocket{
+body{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+
 }
 
-#rocket img{
-    width: 10%;
-    cursor:pointer;
-    position: absolute;
-    bottom: -200;
-    transition: 1s;
-}
-
-@keyframes go-back {
-    from {
-      transform: translateY(100px);
-    }
-    to {
-      transform: translateY(0);
-    }
-}
-
-@keyframes topo {
-    from {
-        transform: translateY(1500px);
-      }
-      to {
-        transform: translateY(0);
-      }
-}
-
-#btn{
-    cursor: pointer;
-    border: #090a0f;
-    padding: 5px;
-    border-radius: 9px;
-    background-color: aqua;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+header {
     
-}
+    background-color: rgba(1, 1, 1, 0.5);
+    padding: 10px;
+    margin-bottom: 10px;
 
-#divbtn{
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-#btn:focus{
-    cursor: progress;
+main{
+    display: flex;
+    width: 100%;
 }
 
-#id{
-    color: red;
-    animation: ease-in;
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1b2735;
 }
+
+.direita{
+    padding: 10px;
+    width: 47%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linha{
+    margin: 0;
+    color: white;
+    background-color: white;
+}
+
+.esquerda{
+    width: 47%;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.esquerda div{
+    margin-top: 180px;
+}
+
+.esquerda p{
+    text-align: justify;
+
+}
+
+.esquerda img{
+    width: 60%;
+    border-radius: 10px;
+    background-color: rgba(1, 1, 1, 0.5);
+}
+
+.esquerda span{
+    color: #054f77;
+}
+
+.esquerda p{
+    width: 60%;
+}
+
+.direita #plutao{
+    width: 2%;
+}
+
+.direita #netuno{
+    width: 35%;
+}
+
+.direita #urano{
+    width: 36%;
+}
+
+.direita #saturno{
+    width: 83%;
+}
+
+.direita #jupiter{
+    width: 100%;
+}
+
+.direita #marte{
+    width: 5%;
+}
+
+.direita #terra{
+    width: 9%;
+}
+
+.direita #venus{
+    width: 8%;
+}
+
+.direita #mercurio{
+    width: 3%;
+}
+
 
